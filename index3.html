@@ -4,62 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Página não tão vazia</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
-    <a href="index.html">Clica aqui para voltares ao artigo</a> [3/4]
-    <p>
+<body>
+    <div id="box-alt">
+        <p>Esta página por acaso não está vazia</p>
+        <br>
+        <p id="pag">[3/4]</p>
+        <hr id="hr1"/>
+        <br>
+        <div id="buttons">
+            <a href="index2.html">
+                <div title="Clica aqui para ires para a página anterior" id="back-button">
+                    <svg id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M10.78 19.03a.75.75 0 01-1.06 0l-6.25-6.25a.75.75 0 010-1.06l6.25-6.25a.75.75 0 111.06 1.06L5.81 11.5h14.44a.75.75 0 010 1.5H5.81l4.97 4.97a.75.75 0 010 1.06z"></path></svg>
+                </div>
+            </a>
+            <a href="index.html">
+                <div title="Clica aqui para ires para a próxima página" id="next-button">
+                    <svg id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M13.22 19.03a.75.75 0 001.06 0l6.25-6.25a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 10-1.06 1.06l4.97 4.97H3.75a.75.75 0 000 1.5h14.44l-4.97 4.97a.75.75 0 000 1.06z"></path></svg>
+                </div>
+            </a>
+        </div>
+    </div>
+    <br>
+    <!-- Inicio da página -->
+    <div id="intro-text">
         Nesta página decidi meter as tags que faltavam, apenas por motivos de avaliação.
         <br>
         Se não és o Diogo nem sabes o que é isto, ignora estas páginas, servem apenas para a avaliação do módulo!
-    </p>
-    <div>
+    </div>
+    <div class="form-group">
         <h4>Formulário</h4>
         <form action="none" method="get">
-            <span>Qualquer texto</span>
+            <label for="qualquercoisa">Qualquer texto</span>
             <br>
-            <input type="text" name="qualquercoisa" id="qualquercoisa" placeholder="Escreve qualquer coisa">
+            <input class="form-control" type="text" name="qualquercoisa" id="qualquercoisa" placeholder="Escreve qualquer coisa">
             <br>
             <br>
-            <span>Completa com a que achas que faz mais sentido:</span>
-            <br>
-            <list>
-                <ol>
-                    <li>Eu vi um sapo com...</li>
-                    <input type="radio" name="sapo" id="">
-                    <label for="sapo" id="sapo">outro sapo</label>
-                    <br>
-                    <input type="radio" name="sapo" id="">
-                    <label for="sapo" id="guardanapo">um guardanapo</label>
-                    <br>
-                    <input type="radio" name="sapo" id="">
-                    <label for="sapo" id="faca">uma faca</label>
-                    <br>
-                    <br>
-                    <li>A aranha arranha...</li>
-                    <input type="radio" name="aranha" id="">
-                    <label for="aranha" id="sapo">o sapo</label>
-                    <br>
-                    <input type="radio" name="aranha" id="">
-                    <label for="aranha" id="ra">a rã</label>
-                    <br>
-                    <input type="radio" name="aranha" id="">
-                    <label for="aranha" id="carro">um carro</label>
-                    <br>
-                    <br>
-                    <li>O tio ze da horta foi...</li>
-                    <input type="radio" name="tio" id="">
-                    <label for="tio" id="agrioes">aos agriões</label>
-                    <br>
-                    <input type="radio" name="tio" id="">
-                    <label for="tio" id="espargos">aos espargos</label>
-                    <br>
-                    <input type="radio" name="tio" id="">
-                    <label for="tio" id="T1EmLisboa">a Lisboa e comprou um T1</label>
-                    <br>
-                    <br>
-                </ol>
-            </list>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="primeiro">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="primeiro" aria-expanded="true" aria-controls="primeiro">
+                                Completa com a que achas que faz mais sentido
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="primeiro" class="collapse show" aria-labelledby="primeiro" data-parent="#accordion">
+                        <div class="card-body">
+                            <list>
+                                <ol>
+                                    <li>Eu vi um sapo com...</li>
+                                    <input type="radio" name="sapo" id="">
+                                    <label for="sapo" id="sapo">outro sapo</label>
+                                    <br>
+                                    <input type="radio" name="sapo" id="">
+                                    <label for="sapo" id="guardanapo">um guardanapo</label>
+                                    <br>
+                                    <input type="radio" name="sapo" id="">
+                                    <label for="sapo" id="faca">uma faca</label>
+                                    <br>
+                                    <br>
+                                    <li>A aranha arranha...</li>
+                                    <input type="radio" name="aranha" id="">
+                                    <label for="aranha" id="sapo">o sapo</label>
+                                    <br>
+                                    <input type="radio" name="aranha" id="">
+                                    <label for="aranha" id="ra">a rã</label>
+                                    <br>
+                                    <input type="radio" name="aranha" id="">
+                                    <label for="aranha" id="carro">um carro</label>
+                                    <br>
+                                    <br>
+                                    <li>O tio ze da horta foi...</li>
+                                    <input type="radio" name="tio" id="">
+                                    <label for="tio" id="agrioes">aos agriões</label>
+                                    <br>
+                                    <input type="radio" name="tio" id="">
+                                    <label for="tio" id="espargos">aos espargos</label>
+                                    <br>
+                                    <input type="radio" name="tio" id="">
+                                    <label for="tio" id="T1EmLisboa">a Lisboa e comprou um T1</label>
+                                    <br>
+                                    <br>
+                                </ol>
+                            </list>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <br>
             <br>
             <span>Quanto dinheiro vale um T1 em Lisboa:</span>
@@ -83,5 +120,7 @@
             <input type="submit" value="Confirmo que aceito o termos e condições do (nome de qualquer rede social aqui) e que deixo que me espiem 24/7">
         </form>
     </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

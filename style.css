@@ -533,3 +533,87 @@ footer {
         text-decoration: none;
         color: rgb(230, 230, 230);
 }
+
+/* Extras */
+div#box-alt {
+    margin: 15px auto;
+    text-decoration: none;
+}
+#box-alt p {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+p#pag {
+    font-size: 14px;
+    margin-top: -40px;
+}
+
+#buttons {
+    white-space: nowrap;
+    display: flex;
+    width: fit-content;
+    margin: -20px auto;
+}
+
+#buttons #back-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin: auto 5px;
+
+    cursor: pointer;
+
+    transition: border .2s, background-color .2s, box-shadow .2s;
+}
+
+#buttons #back-button:hover {
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgba(0, 0, 0, .05);
+    box-shadow: 2px 2px rgba(0, 0, 0, .02);
+
+    transition: border .2s, background-color .2s, box-shadow .2s;
+}
+
+#buttons #next-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin: auto 5px;
+
+    cursor: pointer;
+
+    transition: border .2s, background-color .2s, box-shadow .2s;
+}
+
+#buttons #next-button:hover {
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgba(0, 0, 0, .05);
+    box-shadow: 2px 2px rgba(0, 0, 0, .02);
+
+    transition: border .2s, background-color .2s, box-shadow .2s;
+}
+
+#arrow {
+    margin-left: 7px;
+    margin-top: 7px;
+}
+
+/* Página não tão vazia (Tentei fazer isto em bootstrap e não consegui lol)*/
+#intro-text {
+    border: 1px solid rgba(0,0,0,.05);
+    max-width: fit-content;
+    margin: 25px auto;
+    padding: 8px 10px 8px 10px;
+
+    box-shadow: 4px 4px rgba(0, 0, 0, .05);
+}
+#qualquercoisa {
+    max-width: 400px;
+}
